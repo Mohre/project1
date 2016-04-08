@@ -3,6 +3,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="about_us">درباره‌ ما</string>
-    <string name="student1">علی چوپان ابراهیم حصاری - ۹۰۱۰۵۹۹۱</string>
+    <string name="student1">علی چوپان - ۹۰۱۰۵۹۹۱</string>
     <string name="student2">محمد حسین رضایت - ۹۱۱۰۶۰۶۵</string>
+    <string name="newGame">بازی جدید</string>
+    <string name="saveGame">ذخیره بازی</string>
+    <string name="new_game">آغاز بازی جدید</string>
 </resources>

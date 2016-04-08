@@ -1,116 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:id="@+id/gameFrag">
+    android:id="@+id/gameFrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="1"
+    android:orientation="vertical">
 
-
-    android:layout_width="fill_parent"
-    android:layout_height="match_parent" android:layout_gravity="center_horizontal" android:layout_weight="1">
     <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="horizontal"
-            android:layout_margin="@dimen/box_margin"
-            android:layout_weight="1"
-            android:weightSum="10"
-            android:background="@color/orange">
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_margin="@dimen/box_margin"
+        android:layout_weight="1"
+        android:background="@color/ciena"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
         <View
-                android:layout_weight="5"
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:id="@+id/golang_left">
+            android:id="@+id/golang_left"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
 
         </View>
 
-        <LinearLayout android:layout_width="wrap_content"
-                      android:layout_height="fill_parent"
-                      android:orientation="vertical"
-                      android:weightSum="10">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
             <View
-                    android:layout_weight="5"
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:id="@+id/golang_top">
-            </View>
+                android:id="@+id/golang_top"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"></View>
+
             <ImageView
-                    android:layout_width="@dimen/golang_width"
-                    android:layout_height="@dimen/golang_height"
-                    android:src="@drawable/golang"
-                    android:id="@+id/golang"
-                    />
+                android:id="@+id/golang"
+                android:layout_width="@dimen/golang_width"
+                android:layout_height="@dimen/golang_height"
+                android:src="@drawable/golang" />
         </LinearLayout>
 
     </LinearLayout>
 
     <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/box_margin"
-            android:background="@color/gray">
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/box_margin"
+        android:background="@color/gray">
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="#"
-                android:layout_margin="@dimen/box_margin"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:id="@+id/gameMenu"
-                android:layout_alignParentRight="true" android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/linearLayout" android:gravity="center_horizontal"/>
+            android:id="@+id/gameMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/box_margin"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:gravity="center_horizontal"
+            android:text="#"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
         <LinearLayout
-                android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/l_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/button_margin"
+                    android:background="@color/light_blue"
+                    android:text="L" />
+            </RelativeLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
-                android:id="@+id/linearLayout">
-            <RelativeLayout
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/u_btn"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    >
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/button_margin"
+                    android:background="@color/light_blue"
+                    android:text="U" />
+
                 <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="L"
-                        android:background="@color/blue"
-                        android:layout_margin="@dimen/button_margin"
-                        android:id="@+id/l_btn"
-                        android:layout_gravity="right"
-                        android:layout_centerVertical="true"/>
-            </RelativeLayout>
-            <LinearLayout
-                    android:orientation="vertical"
+                    android:id="@+id/d_btn"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="U"
-                        android:background="@color/blue"
-                        android:layout_margin="@dimen/button_margin"
-                        android:id="@+id/u_btn"/>
-                <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="D"
-                        android:background="@color/blue"
-                        android:layout_margin="@dimen/button_margin"
-                        android:id="@+id/d_btn"/>
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/button_margin"
+                    android:background="@color/light_blue"
+                    android:text="D" />
             </LinearLayout>
+
             <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent">
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
                 <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="R"
-                        android:background="@color/blue"
-                        android:layout_margin="@dimen/button_margin"
-                        android:id="@+id/r_btn"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentStart="true"/>
+                    android:id="@+id/r_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/button_margin"
+                    android:background="@color/light_blue"
+                    android:text="R" />
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>

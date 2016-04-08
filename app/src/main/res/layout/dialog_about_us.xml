@@ -8,11 +8,13 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/student1"
+        android:textSize="32sp"
         android:text="@string/student1"/>
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/student2"
+        android:textSize="32sp"
         android:text="@string/student2"/>/>
 
 </LinearLayout>

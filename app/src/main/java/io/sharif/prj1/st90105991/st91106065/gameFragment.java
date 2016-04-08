@@ -4,6 +4,7 @@ import android.app.Fragment;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.text.SpannableString;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -100,6 +101,7 @@ public class gameFragment extends Fragment{
                                 return true;
                             case R.id.item_new:
                                 newGame(5, 5, getView());
+                                showToast(getView());
                                 return true;
                         }
                         return false;
@@ -111,6 +113,13 @@ public class gameFragment extends Fragment{
         });
 
         return view;
+    }
+
+    private void showToast(View view) {
+        String newGameString = getString(R.string.new_game);
+        SpannableString spannableString = new SpannableString(newGameString);
+        spannableString.setSpan(new RainbowSpan(view.getContext()),0,newGameString.length(),0);
+        Toast.makeText(view.getContext(), spannableString, Toast.LENGTH_LONG).show();
     }
 
     private void newGame(int x, int y, View view){
