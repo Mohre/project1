@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Prj1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_us">درباره‌ ما</string>
+    <string name="student1">علی چوپان ابراهیم حصاری - ۹۰۱۰۵۹۹۱</string>
+    <string name="student2">محمد حسین رضایت - ۹۱۱۰۶۰۶۵</string>
+</resources>
