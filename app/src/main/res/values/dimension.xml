@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="box_margin">10dp</dimen>
+    <dimen name="button_margin">3dp</dimen>
+    <dimen name="golang_width">50dp</dimen>
+    <dimen name="golang_height">70dp</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">prj1</string>
+    <string name="newGame">بازی جدید</string>
+    <string name="saveGame">ذخیره بازی</string>
+</resources>
